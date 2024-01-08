@@ -1,0 +1,284 @@
+.heading-2 {
+  font-size: 5.4rem;
+  color: hsl(0, 0%, 27%);
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.heading-3 {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 27%);
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.mb-sm {
+  margin-bottom: 2rem;
+}
+
+.mb-md {
+  margin-bottom: 3rem;
+}
+
+.mb-lg {
+  margin-bottom: 4rem;
+}
+
+.mb-hg {
+  margin-bottom: 6rem;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  color: hsl(0, 0%, 63%);
+  font-weight: 500;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  font-size: 1.2rem;
+}
+
+.container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 100vw;
+  grid-template-rows: 14rem minmax(min-content, calc(60vh - 14rem)) 1fr;
+}
+
+.logo {
+  height: 2.5rem;
+}
+@media (max-width: 57em) {
+  .logo {
+    height: 1.5rem;
+  }
+}
+
+.btn-hamburger {
+  position: absolute;
+  display: none;
+  top: 50%;
+  transform: translate(0%, -50%);
+  left: 15px;
+  z-index: 1000;
+  left: 10px;
+}
+@media (max-width: 57em) {
+  .btn-hamburger {
+    display: absolute;
+    display: block;
+  }
+}
+
+.carrousel {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.btn--carrousel {
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
+  display: block;
+  background-color: #000;
+}
+.btn--carrousel:hover {
+  background-color: hsl(0, 0%, 27%);
+}
+
+.btn {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.btn:link, .btn:visited {
+  color: #000;
+  text-decoration: none;
+  letter-spacing: 1.5rem;
+  font-weight: 600;
+}
+.btn:hover {
+  color: hsl(0, 0%, 63%);
+}
+
+.presentation {
+  display: grid;
+  grid-template-columns: 55vw 45vw;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+@media (max-width: 57em) {
+  .presentation {
+    grid-template-columns: 100vw;
+  }
+}
+.presentation--1 .presentation__img {
+  filter: brightness(80%);
+}
+.presentation__img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+.presentation__box-text {
+  padding: 6rem;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  position: relative;
+}
+@media (max-width: 57em) {
+  .presentation__box-text {
+    padding: 2rem 2rem 6rem;
+  }
+}
+.presentation__text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+.presentation__btn-box {
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  left: 0px;
+}
+@media (max-width: 57em) {
+  .presentation__btn-box {
+    top: 0px;
+    right: 0px;
+    left: auto;
+    bottom: auto;
+    transform: translateY(-100%);
+    z-index: 200;
+  }
+}
+
+.checkbox {
+  visibility: hidden;
+}
+.checkbox:checked + .nav__items {
+  top: 0px;
+  color: #000;
+  background-color: hsl(0, 0%, 100%);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+}
+
+.nav__items {
+  display: flex;
+  gap: 2rem;
+  transition: top 0.5s ease;
+  color: hsl(0, 0%, 100%);
+}
+@media (max-width: 57em) {
+  .nav__items {
+    position: fixed;
+    right: 50%;
+    transform: translate(50%);
+    top: -100px;
+  }
+}
+.nav__close {
+  position: absolute;
+  left: 10px;
+}
+.nav__item {
+  color: currentColor;
+  list-style: none;
+}
+.nav__btn {
+  position: relative;
+}
+.nav__btn:link, .nav__btn:visited {
+  color: currentColor;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.nav__btn::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: hsl(0, 0%, 100%);
+  display: inline-block;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: all 0.3s ease;
+}
+.nav__btn:hover::after {
+  width: 100%;
+}
+
+.about__img {
+  height: 100%;
+  width: 100%;
+  object-fit: center;
+  display: block;
+}
+.about__box-text {
+  padding: 3rem;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  display: grid;
+  align-content: center;
+}
+
+.header {
+  grid-row: 1/1;
+  grid-column: 1/-1;
+  z-index: 5;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  padding-left: 6rem;
+  position: relative;
+}
+@media (max-width: 57em) {
+  .header {
+    padding-left: 2rem;
+    justify-content: center;
+  }
+}
+
+.feature {
+  grid-row: 1/3;
+  grid-column: 1/-1;
+  z-index: 0;
+}
+
+.about-us {
+  display: grid;
+  grid-row: 3/4;
+  grid-template-columns: 30% 40% 30%;
+  justify-content: center;
+}
+@media (max-width: 57em) {
+  .about-us {
+    grid-template-columns: 100vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

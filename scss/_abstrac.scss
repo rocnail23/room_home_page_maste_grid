@@ -1,0 +1,36 @@
+$color-Dark-Gray: hsl(0, 0%, 63%);
+$color-White: hsl(0, 0%, 100%);
+$color-Very-Dark-Gray: hsl(0, 0%, 27%);
+$color-Dark: #000;
+$font-family:'League Spartan', sans-serif;
+
+.heading-2{
+    font-size: 5.4rem;
+    color: $color-Very-Dark-Gray;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.heading-3{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    color: $color-Very-Dark-Gray;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.mb-sm{
+    margin-bottom: 2rem;
+}
+
+.mb-md{
+    margin-bottom: 3rem;
+}
+
+.mb-lg{
+    margin-bottom: 4rem;
+}
+
+.mb-hg{
+    margin-bottom: 6rem;
+}

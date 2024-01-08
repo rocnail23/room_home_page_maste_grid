@@ -1,0 +1,15 @@
+.header{
+   grid-row: 1/1;
+   grid-column: 1 / -1;
+   z-index: 5;
+   display: flex;
+   gap: 4rem;
+   align-items: center;
+   padding-left: 6rem;
+   position: relative;
+   @media (max-width: 57em){
+      padding-left: 2rem;
+      justify-content: center;
+      
+    }
+}

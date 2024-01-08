@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <title>Frontend Mentor | Room homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="main.js"></script>
+</head>
+
+<body class="container">
+ 
+  
+  
+
+  <header class="header">
+    <label class="btn-hamburger" for="checkbox">
+      <img src="images/icon-hamburger.svg" alt="">
+    </label>
+   <img class="logo" src="images/logo.svg" alt="">
+    <nav class="nav">
+      <input class="checkbox" id="checkbox" type="checkbox">
+      <ul class="nav__items">
+        <label class="nav__close" for="checkbox">
+          <img  src="images/icon-close.svg" alt="">
+        </label>
+        <li class="nav__item"><a class="nav__btn" href="#">home</a></li>
+        <li class="nav__item"><a class="nav__btn" href="#">shop</a></li>
+        <li class="nav__item"><a class="nav__btn" href="#">about</a></li>
+        <li class="nav__item"><a class="nav__btn" href="#">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="feature">
+      <div class="carrousel">
+        <article class="presentation presentation--1">
+          <img srcset="images/desktop-image-hero-1.jpg 840w, images/mobile-image-hero-1.jpg 375w"
+          sizes=""
+          alt="image of a shair"
+          class="presentation__img"
+          src="images/desktop-image-hero-1.jpg">
+          <div class="presentation__box-text">
+              <h2 class="heading-2">
+                Discover innovative ways to decorate
+              </h2>
+              <p class="presentation__text">
+                We provide unmatched quality, comfort, and style for property owners across the country. 
+                Our experts combine form and function in bringing your vision to life. Create a room in your 
+                own style with our collection and make your property a reflection of you and what you love.
+              </p>
+              <a href="#" class="btn btn--shop mb-sm">Shop now 
+              <img src="images/icon-arrow.svg" alt=""></a>
+              <div class="presentation__btn-box">
+                <img  type="image/svg+xml" data-go="-1" class="btn btn--carrousel" src="images/icon-angle-left.svg" alt="">
+                <img  type="image/svg+xml" data-go="1" class="btn btn--carrousel" src="images/icon-angle-right.svg" alt="">
+              </div>
+          </div> 
+        </article>
+
+        <article class="presentation presentation--2">
+          <img srcset="images/desktop-image-hero-2.jpg 840w, images/mobile-image-hero-2.jpg 375w"
+          sizes=""
+          alt="image of a shair"
+          class="presentation__img"
+          src="images/desktop-image-hero-2.jpg">
+          <div class="presentation__box-text">
+              <h2 class="heading-2">
+                Discover innovative ways to decorate
+              </h2>
+              <p class="presentation__text">
+                We provide unmatched quality, comfort, and style for property owners across the country. 
+                Our experts combine form and function in bringing your vision to life. Create a room in your 
+                own style with our collection and make your property a reflection of you and what you love.
+              </p>
+              <a href="#" class="btn btn--shop mb-sm">Shop now 
+              <img src="images/icon-arrow.svg" alt=""></a>
+              <div class="presentation__btn-box">
+                <img  type="image/svg+xml" data-go="-1"  class="btn btn--carrousel" src="images/icon-angle-left.svg" alt="">
+                <img  type="image/svg+xml" data-go="1"   class="btn btn--carrousel" src="images/icon-angle-right.svg" alt="">
+              </div>
+          </div> 
+        </article>
+
+        <article class="presentation presentation--3">
+          <img srcset="images/desktop-image-hero-3.jpg 840w, images/mobile-image-hero-3.jpg 375w"
+          sizes=""
+          alt="image of a shair"
+          class="presentation__img"
+          src="images/desktop-image-hero-3.jpg">
+          <div class="presentation__box-text">
+              <h2 class="heading-2">
+                Discover innovative ways to decorate
+              </h2>
+              <p class="presentation__text">
+                We provide unmatched quality, comfort, and style for property owners across the country. 
+                Our experts combine form and function in bringing your vision to life. Create a room in your 
+                own style with our collection and make your property a reflection of you and what you love.
+              </p>
+              <a href="#" class="btn btn--shop mb-sm">Shop now 
+              <img src="images/icon-arrow.svg" alt=""></a>
+              <div class="presentation__btn-box">
+                <img  type="image/svg+xml" data-go="-1" class="btn btn--carrousel" src="images/icon-angle-left.svg" alt="">
+                <img  type="image/svg+xml" data-go="1" class="btn btn--carrousel" src="images/icon-angle-right.svg" alt="">
+              </div>
+          </div> 
+        </article>
+
+      </div>
+  </section>
+
+  <section class="about-us">
+    <div class="about__box-img">
+      <img 
+      alt="image of a shair"
+      class="about__img"
+      src="images/image-about-dark.jpg">
+    </div>
+   
+    <div class="about__box-text">
+      <h3 class="heading-3 mb-sm">About our furniture</h3>
+      <p class="about__text">  Our multifunctional collection blends design and function to suit your individual taste.
+        Make each room unique, or pick a cohesive theme that best express your interests and what
+        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+        or anything in between. Product specialists are available to help you create your dream space.</p>
+    </div>
+
+    <div class="about__box-img">
+      <img 
+      alt="image of a shair"
+      class="about__img"
+      src="images/image-about-light.jpg">
+    </div>
+   
+  </section>
+
+</body>
+</html>

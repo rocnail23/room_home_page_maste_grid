@@ -1,0 +1,240 @@
+.logo{
+    height: 2.5rem;
+    @media (max-width: 57em){
+        height: 1.5rem;
+   
+        
+      }
+}
+
+.btn-hamburger{
+       position: absolute;
+       display: none;
+       top: 50%;
+       transform: translate(0%,-50%);
+       left: 15px;
+       z-index: 1000;
+       left: 10px;
+
+       @media (max-width: 57em){
+        display: absolute;
+        display: block;
+       }
+}
+
+.carrousel{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+
+
+.btn--carrousel{
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    display: block;
+    background-color: $color-Dark;
+    &:hover{
+        background-color: $color-Very-Dark-Gray ;
+    }
+}
+
+.btn{
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    &:link,
+    &:visited{
+        color: $color-Dark;
+        text-decoration: none;
+        letter-spacing: 1.5rem;
+        font-weight: 600;
+    }
+
+    &:hover{
+        color: $color-Dark-Gray;
+    }
+}
+
+   
+
+.presentation{
+    display: grid;
+    grid-template-columns: 55vw 45vw;
+    height: 100%;
+    width: 100%;
+    transition: transform .5s ease;
+
+    @media (max-width: 57em){
+        grid-template-columns: 100vw;
+      }
+
+    &--1 .presentation__img{
+        filter: brightness(80%);
+    }
+
+    &__img{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        display: block;
+       
+     
+    }
+
+    &__box-text{
+        padding: 6rem;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        position: relative;
+        @media (max-width: 57em){
+            padding: 2rem 2rem 6rem;
+          }
+    }
+
+    &__text{
+        font-size: 1.8rem;
+        line-height: 1.6;
+    }
+
+    &__btn-box{
+        position: absolute;
+        display: flex;
+        bottom: 0px;
+        left: 0px;
+        @media (max-width: 57em){
+            top:0px;
+            right: 0px;
+            left: auto;
+            bottom: auto;
+            transform: translateY(-100%);
+            z-index: 200;
+          }
+    }
+
+   
+    
+}
+
+.checkbox {
+
+    visibility: hidden;
+
+
+
+&:checked + .nav__items{
+    top: 0px;
+    color: $color-Dark;
+    background-color: $color-White;
+    width:100vw;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+}
+
+
+
+
+
+}
+
+
+
+
+.nav{
+
+    &__items{
+        display: flex;
+        gap: 2rem;
+        transition: top .5s ease;
+        color: $color-White;
+        @media (max-width: 57em){
+              position: fixed;
+              right: 50%;
+              transform: translate(50%);
+              top: -100px;
+            
+          }
+    }
+
+    &__close{
+        position: absolute;
+        left: 10px;
+    }
+
+    &__item{
+        color: currentColor;
+        list-style: none;
+
+    }
+
+    &__btn{
+        position: relative ;
+        
+
+        &:link,
+        &:visited{
+            color: currentColor;
+            text-decoration: none;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
+        &::after{
+            content:"";
+            position: absolute;
+            width: 0%;
+            height: 1px;
+            background-color: $color-White;
+            display: inline-block;
+            bottom: -5px;
+            left: 50%;
+            transform:  translate(-50%);
+            transition: all .3s ease;
+            
+            
+        }
+
+        &:hover::after{
+            width: 100%;
+        }
+
+    }
+
+}
+
+
+
+.about{
+
+
+    &__img{
+      height: 100%;
+      width: 100%;
+      object-fit: center;
+      display: block;
+       
+    }
+
+    &__box-text{
+        padding: 3rem;
+        font-size: 1.8rem;
+        line-height: 1.4;
+        display: grid;
+        align-content: center;
+    }
+
+
+
+
+}
