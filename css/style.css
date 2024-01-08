@@ -202,6 +202,13 @@ body {
 .nav__close {
   position: absolute;
   left: 10px;
+  z-index: 200;
+  display: none;
+}
+@media (max-width: 57em) {
+  .nav__close {
+    display: block;
+  }
 }
 .nav__item {
   color: currentColor;
